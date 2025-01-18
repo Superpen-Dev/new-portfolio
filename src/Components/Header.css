@@ -81,6 +81,7 @@ body {
   gap: 2rem;
   transition: right 0.4s cubic-bezier(0.42, 0, 0.58, 1);
   box-shadow: -3px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Ensure it's on top of everything */
 }
 
 .sidebar.open {

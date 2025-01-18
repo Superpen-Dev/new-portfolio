@@ -5,6 +5,8 @@ import Service from "./Components/Service"
 import Skills from "./Components/Skills"
 import Portfolio from "./Components/Portfolio"
 import Footer from "./Components/Footer"
+import './index.css';
+
 function App() {
   return (
     <div>

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Left Section */}
         <div className="footer-left" data-aos="fade-right">
-          <h2>
+          <h2 id="contact">
             DO YOU HAVE A PROJECT TO <span>DISCUSS?</span>
           </h2>
           <p>GET IN TOUCH 💬</p>
@@ -15,7 +15,7 @@ const Footer = () => {
             <p><strong>CONTACT:</strong> allitoheebishola1@gmail.com</p>
             <p><strong>SOCIAL MEDIA:</strong></p>
             <div className="social-links">
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/toheeb-alli" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin social-icon"></i>
               </a>
               <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram social-icon"></i>
               </a>
-              <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2347064835520" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp social-icon"></i>
               </a>
               <a href="https://t.me/your-telegram-handle" target="_blank" rel="noopener noreferrer">

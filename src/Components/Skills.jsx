@@ -4,7 +4,7 @@ import Tail from "../assets/Tail.png"
 
 const Skills = () => {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="technologies">
       <h2 className="skills-title">SKILLS</h2>
       <p className="skills-description">
         The skills, tools, and technologies I use:

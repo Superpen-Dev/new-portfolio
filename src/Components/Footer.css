@@ -2,6 +2,7 @@
   background-color: #0e112a; /* Dark background color */
   color: #fff;
   padding: 3rem 2rem;
+  z-index: 9999; /* Ensure it's on top of everything */
 }
 
 .footer-content {

@@ -9,7 +9,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <h2 className="services-title">MY SERVICES</h2>
       <div className="services-container">
         <div className="service-card" data-aos="fade-right" data-aos-delay="100">
