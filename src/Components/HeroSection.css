@@ -87,22 +87,63 @@ p {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    background-color: #0e112a; /* Background dark blue */
-    color: #ffffff; /* White text */
-    height: 100vh;
-    margin-top: -60px;
+    flex-direction: column; /* Stack the content and image */
+    align-items: center; /* Center both the text and image */
+    padding: 2rem;
+    height: auto; /* Allow the section height to adjust based on content */
   }
 
   .content {
     max-width: 100%;
+    text-align: center; /* Center align the text */
     margin-bottom: 2rem;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
   }
 
   .image-container {
-    max-width: 100%;
+    max-width: 80%; /* Ensure image is contained */
+    margin-top: 1rem; /* Space between text and image */
+  }
+
+  .profile-image {
+    width: 100%; /* Make sure the image scales well within its container */
+    height: auto;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+    flex-direction: row; /* Stack the buttons vertically */
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    margin-top: 40px;
+    font-size: 2rem; /* Smaller font size for very small screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph font size for small screens */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 1rem;
+  }
+
+  .image-container {
+    margin-top: 1rem; /* Ensure space between image and text */
+  }
+
+  .profile-image {
+    width: 100%; /* Image scales within the container */
+    height: auto;
   }
 }

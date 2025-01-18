@@ -1,0 +1,71 @@
+/* General Section Styling */
+.skills-section {
+  padding: 4rem 2rem;
+  background-color: #0e112a; /* Dark background color */
+  color: white;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4f79, #7c77e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.skills-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem; /* Adjust the gap between logos */
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%; /* Ensure it doesn't go beyond the page width */
+}
+
+/* Individual Skill Logos */
+.skill-logo {
+  width: 80px; /* Adjust logo size */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Set initial opacity for AOS animation */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: row; /* Ensure the logos stay in a row on tablets and smaller screens */
+    justify-content: space-evenly; /* Space out logos evenly */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow logos to wrap into multiple rows */
+    justify-content: space-evenly; /* Space out logos evenly */
+  }
+
+  .skill-logo {
+    width: 30%; /* Adjust logo width to fit three logos per line */
+    margin-bottom: 2rem; /* Space between rows */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-logo {
+    width: 45%; /* Adjust logo width to fit more logos per row on very small screens */
+  }
+}

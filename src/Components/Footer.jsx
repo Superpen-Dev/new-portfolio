@@ -1,0 +1,63 @@
+import React from "react";
+import "./Footer.css";
+
+const Footer = () => {
+  return (
+    <footer className="footer-section">
+      <div className="footer-content">
+        {/* Left Section */}
+        <div className="footer-left" data-aos="fade-right">
+          <h2>
+            DO YOU HAVE A PROJECT TO <span>DISCUSS?</span>
+          </h2>
+          <p>GET IN TOUCH 💬</p>
+          <div className="contact-details">
+            <p><strong>CONTACT:</strong> allitoheebishola1@gmail.com</p>
+            <p><strong>SOCIAL MEDIA:</strong></p>
+            <div className="social-links">
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin social-icon"></i>
+              </a>
+              <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook social-icon"></i>
+              </a>
+              <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram social-icon"></i>
+              </a>
+              <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-whatsapp social-icon"></i>
+              </a>
+              <a href="https://t.me/your-telegram-handle" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-telegram social-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="footer-right" data-aos="fade-left">
+          <h3>Contact Form</h3>
+          <form
+            action="https://formsubmit.co/allitoheebishola1@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" className="btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom" data-aos="fade-up">
+        <p>
+          &copy; 2024 - All rights reserved. Web design and development by 
+          <span> Allitoheeb Ishola</span>.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

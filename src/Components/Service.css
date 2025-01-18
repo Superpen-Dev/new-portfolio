@@ -1,0 +1,87 @@
+/* General Section Styling */
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #0e112a; /* Dark background color */
+  color: white;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4f79, #7c77e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+/* Flexbox Container for Service Cards */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; /* Adjust the gap between cards */
+  flex-wrap: nowrap; /* Ensure no wrapping */
+  margin: 0 auto;
+}
+
+/* Individual Service Cards */
+.service-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 30%; /* Default width for large screens */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  opacity: 0; /* Set initial opacity for AOS animation */
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  display: flex;
+}
+.new {
+  justify-content: center;
+  display: flex;
+}
+.service-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%; /* Smaller width for mobile devices */
+    margin-bottom: 2rem; /* Space between service cards */
+  }
+
+  .service-icon {
+    font-size: 2.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .service-card p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem; /* Smaller title font size for mobile */
+  }
+}
