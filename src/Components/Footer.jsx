@@ -51,11 +51,12 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom" data-aos="fade-up">
-        <p>
-          &copy; 2024 - All rights reserved. Web design and development by 
-          <span> Allitoheeb Ishola</span>.
-        </p>
-      </div>
+  <p>
+    &copy; {new Date().getFullYear()} - All rights reserved. <br /> Developed By
+    <span> Superpen-Dev</span>.
+  </p>
+</div>
+
     </footer>
   );
 };
