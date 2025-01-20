@@ -5,6 +5,7 @@ import AOS from "aos";
 import Toheeb from "../assets/Toheeb.png"
 
 
+
 const HeroSection = () => {
   React.useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -21,9 +22,15 @@ const HeroSection = () => {
           for creating beautiful and responsive websites.
         </p>
         <div className="buttons">
-          <button className="btn primary-btn">VIEW MY WORK</button>
-          <button className="btn secondary-btn">DOWNLOAD CV</button>
-        </div>
+  <a href="#portfolio">
+    <button className="btn primary-btn">VIEW MY WORK</button>
+  </a>
+  <a href="/ToheebAlliResume.pdf" download>
+  <button className="btn secondary-btn">DOWNLOAD CV</button>
+</a>
+
+</div>
+
       </div>
       <div className="image-container" data-aos="fade-up">
         <img

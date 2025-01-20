@@ -40,7 +40,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       <h2 className="skills-title">PORTFOLIO</h2>
-      <div className="portfolio-grid">
+      <div className="portfolio-grid" data-aos="fade-up" data-aos-offset="200">
         {projects.map((project, index) => (
           <div className="portfolio-item" key={index}>
             <a href={project.link} target="_blank" rel="noopener noreferrer">

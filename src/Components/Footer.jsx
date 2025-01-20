@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-content">
         {/* Left Section */}
-        <div className="footer-left" data-aos="fade-up">
+        <div className="footer-left" data-aos="fade-right" data-aos-offset="200">
           <h2 id="contact">
             DO YOU HAVE A PROJECT TO <span>DISCUSS?</span>
           </h2>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="footer-right" data-aos="fade-up">
+        <div className="footer-right" data-aos="fade-left" data-aos-offset="200">
           <h3>Contact Form</h3>
           <form
             action="https://formsubmit.co/allitoheebishola1@gmail.com"
